@@ -1,0 +1,74 @@
+  <<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Garud Info Team</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+            margin: 0;
+            padding: 0;
+        }
+        .contact-container {
+            max-width: 500px;
+            margin: 60px auto 0 auto;
+            background: #fffbe6;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(249, 212, 35, 0.2);
+            padding: 32px 24px;
+        }
+        h2 {
+            color: #ee0979;
+            text-align: center;
+        }
+        .contact-info {
+            margin-bottom: 24px;
+            color: #185a9d;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #43cea2;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background: #43cea2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #ee0979;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:info@garudteam.com">info@garudteam.com</a></p>
+            <p><strong>Phone:</strong> +91-1234567890</p>
+            <p><strong>Address:</strong> Garud Info Team, Bareilly, India</p>
+        </div>
+        <form class="contact-form" action="mailto:info@garudteam.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
